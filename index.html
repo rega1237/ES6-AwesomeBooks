@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Awesome Books</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <title>Awesome Books</title>
 </head>
 <body>
-  
+    <main>
+        <header>
+            <div class="menu-container">
+                <h2>Awesome Books</h2>
+                <nav class="principal-menu">
+                    <ul>
+                        <li><a class="list-link" href="#list">List</a></li>
+                        <li class="middle-nav"><a class="add-book-link" href="#add-book">New</a></li>
+                        <li><a class="contact-link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="date"></p>
+          </header>
+    
+        
+    
+        <section id="list" >
+            <h1 class="title">All awesome books</h1>
+            <div class="books-container"></div>
+        </section>
+    
+    
+        <section id="add-book" class="new-book-container">
+            <h2 class="new-book-title">Add a new book</h2>
+            <form class="add-book-form" action="index.html">
+                <input class="title-input" type="text" placeholder="Title">
+                <input class="author-input" type="text" placeholder="Author">
+                <input class="add-book-btn" type="button" value="Add">
+            </form>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Information</h2>
+            <p>Do you have any question or you just want to say "Hello"? <br> 
+                You can reach out to us!</p>
+            <div class="list">
+                <ul>
+                    <li>Our email mail@mail.com</li>
+                    <li>Our Phone number +123546879</li>
+                    <li>Our adress Fwy Fort Road, Houston TX</li>
+                </ul>
+            </div>
+            
+        </section>
+    
+        <footer>
+            <div class="footer">
+                <p>Copyright</p>
+                <a href="https://github.com/rega1237">Rafael Guzman</a>
+            </div>
+        </footer>
+    </main>
+    
+
+    <script type="module" src="index.js"></script>
 </body>
-<script src="index.js"></script>
 </html>

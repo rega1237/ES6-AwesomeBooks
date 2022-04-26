@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(152, 189, 152), rgb(216, 171, 171));
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header {
+  margin: 0.5rem 1rem;
+}
+
+.menu-container {
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  border: solid 2px black;
+}
+
+.menu-container h2 {
+  font-family: 'Pacifico', cursive;
+}
+
+.menu-container ul {
+  display: flex;
+  margin-right: 20px;
+  gap: 10px;
+}
+
+.principal-menu li {
+  list-style: none;
+}
+
+.principal-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #0a0a0a;
+  font-family: 'Pacifico', cursive;
+}
+
+.principal-menu a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.middle-nav {
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  padding: 0 10px;
+}
+
+.date {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.books-container {
+  border: solid 3px black;
+  margin: 1rem;
+}
+
+.book-wraper {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-text {
+  display: flex;
+  gap: 5px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.book-div:nth-child(odd) {
+  background: #ddd;
+}
+
+.new-book-title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 0;
+}
+
+.remove-btn {
+  padding: 5px;
+  box-shadow: 3px 3px black;
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.title-input,
+.author-input {
+  border: solid 4px black;
+  padding: 7px;
+}
+
+.add-book-btn {
+  width: 20%;
+  align-self: flex-end;
+  padding: 5px;
+  box-shadow: 3px 3px black;
+}
+
+.contact {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 50px;
+  font-size: 2.3rem;
+}
+
+.contact p {
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.list {
+  padding: 20px 30px;
+  font-size: 1.3rem;
+}
+
+footer {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  align-self: flex-end;
+}
+
+.footer {
+  display: flex;
+  border: 2px solid black;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}

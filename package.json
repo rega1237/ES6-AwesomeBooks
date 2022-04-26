@@ -1,20 +1,15 @@
 {
-  "name": "es6-awesomebooks",
+  "name": "es6-awesome-books",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rega1237/ES6-AwesomeBooks.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rega1237/ES6-AwesomeBooks/issues"
-  },
-  "homepage": "https://github.com/rega1237/ES6-AwesomeBooks#readme"
+  "dependencies": {
+    "luxon": "^2.3.2"
+  }
 }
