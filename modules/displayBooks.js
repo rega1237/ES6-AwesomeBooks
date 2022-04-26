@@ -1,5 +1,5 @@
-import { Book } from './book.js';
+import Book from './book.js';
 
 export default () => {
-    new Book().displayBooks();
-}
+  new Book().displayBooks();
+};

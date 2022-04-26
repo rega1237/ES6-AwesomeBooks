@@ -1,7 +1,3 @@
-import { Book } from './modules/book.js';
-import { bookContainer, titleInput, authorInput, addBookBtn, bookListLink, addNewBookLink, contactInfoLink, 
-  bookList, addNewBook, contactInfo, dateText} from './modules/domElements.js';
-import booksArr from './modules/booksArr.js';
 import displayBooks from './modules/displayBooks.js';
 import displayNav from './modules/displayNav.js';
 import addBooksListener from './modules/addBooksListener.js';
@@ -13,8 +9,3 @@ initialDisplay();
 displayBooks();
 displayNav();
 addBooksListener();
-
-
-
-
-

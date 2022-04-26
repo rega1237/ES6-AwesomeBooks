@@ -1,7 +1,7 @@
-import booksArr from './booksArr.js'
+import booksArr from './booksArr.js';
 import { bookContainer } from './domElements.js';
 
-export class Book {
+export default class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
@@ -9,20 +9,20 @@ export class Book {
 
   removeBook = (index) => {
     booksArr.splice(index, 1);
-    this.booksData = JSON.stringify(booksArr)
+    this.booksData = JSON.stringify(booksArr);
     localStorage.setItem('books', this.booksData);
   }
 
-  add = (book) => {
-    booksArr.push({author: this.author, title: this.title});
-    this.booksData = JSON.stringify(booksArr)
+  add = () => {
+    booksArr.push({ author: this.author, title: this.title });
+    this.booksData = JSON.stringify(booksArr);
     localStorage.setItem('books', this.booksData);
   }
 
   displayBooks = () => {
     if (localStorage.getItem('books')) {
       this.booksData = JSON.parse(localStorage.getItem('books'));
-    }else {
+    } else {
       this.booksData = [];
     }
     const book = new Book();
