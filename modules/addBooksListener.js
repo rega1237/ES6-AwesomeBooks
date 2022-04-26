@@ -5,7 +5,7 @@ import displayBooks from './displayBooks.js';
 export default () => {
   addBookBtn.addEventListener('click', () => {
     const form = document.querySelector('.add-book-form');
-    const addBookText = document.querySelector('.new-book-title')
+    const addBookText = document.querySelector('.new-book-title');
     const book = new Book(titleInput.value, authorInput.value);
     book.add(book);
     displayBooks();
